@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="elo_history_customer_view_form" model="ir.ui.view">
+            <field name="name">elo.history.customer.view.form</field>
+            <field name="model">elo.history.customer</field>
+            <field name="arch" type="xml">
+                <form>
+                    <!-- <header groups="bigapps_medtracks.ba_group_medtracks_cadre_sante">
+                        <button name="cancel" string="Annuler" class="oe_highlight" type="object" invisible="state in ('mission_canceled')"/>
+                        <field name="state" widget="statusbar" options="{'clickable': '1'}" statusbar_visible="waiting_for_candidates,profiles_to_validate,mission_partially_validated,mission_validated,mission_archived"/>
+                    </header> -->
+                   
+                                               <field name="name" required="1"/>
+
+                </form>
+            </field>
+        </record>
+    
+        <record id="elo_history_customer_view_tree" model="ir.ui.view">
+            <field name="name">elo.history.customer.view.list</field>
+            <field name="model">elo.history.customer</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name" />
+                  
+                </list>
+            </field>
+        </record>
+    
+        <record id="elo_history_customer_view_search" model="ir.ui.view">
+            <field name="name">elo.history.customer.view.search</field>
+            <field name="model">elo.history.customer</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                </search>
+            </field>
+        </record>
+
+        <record id='elo_action_elo_history_customer' model='ir.actions.act_window'>
+            <field name="name">Historiques</field>
+            <field name="res_model">elo.history.customer</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+    </data>
+</odoo>

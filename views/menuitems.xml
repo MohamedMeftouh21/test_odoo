@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem   id="menu_principal_elosys"
+                    name="Elosys"
+                    sequence="60"/>
+
+                    <menuitem   id="elo_menu_elo_history_customer"
+                                parent="menu_principal_elosys"
+                                name="Historiques"
+                                action="elo_action_elo_history_customer"
+                                sequence="10"/>
+
+                 
+    </data>
+</odoo>
