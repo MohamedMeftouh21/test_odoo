@@ -1,1 +1,1 @@
-from . import elo_history_customer
+from .dist import elo_history_customer
